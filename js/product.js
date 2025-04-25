@@ -88,7 +88,7 @@ colorBtns.forEach((item, i) => { // looping through each button
         item.classList.add('check'); // adding check class to clicked button
         checkedBtn = i; // upading the variable
 
-        productImageSlide.style.backgroundImage = `url('${productImgFolder}1.1.png')`;
+        productImageSlide.style.backgroundImage = `url('${productImgFolder}${i+1}.1.png')`;
         productImages[0].src=`${productImgFolder}${i+1}.1.png`;
         productImages[1].src=`${productImgFolder}${i+1}.2.png`;
         productImages[2].src=`${productImgFolder}${i+1}.3.png`;
