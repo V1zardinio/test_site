@@ -35,31 +35,40 @@ if (choosedProduct == 0) {
 }
 
 const createProduct = () => {
-    let product = document.querySelector('.product-details');
+    let product = document.querySelector('.product-card');
 
     product.innerHTML = `
-        <div class="details">
-            <h2 class="product-brand">${productName}</h2>
-            <span class="product-price">${productPrice}</span>
-        </div>
-
-        <div class="image-slider" style="background-image: url('${productImgFolder}1.1.png');">
-            <div class="product-images">
-                <img id="0" src="${productImgFolder}1.1.png" class="active" alt="">
-                <img id="1" src="${productImgFolder}1.2.png" alt="">
-                <img id="2" src="${productImgFolder}1.3.png" alt="">
-                <img id="3" src="${productImgFolder}1.4.png" alt="">
+        <section class="product-details">
+            <div class="details">
+                <h2 class="product-brand">${productName}</h2>
+                <span class="product-price">${productPrice}</span>
             </div>
-        </div>
 
-        <div class="details">
+            <div class="image-slider" style="background-image: url('${productImgFolder}1.1.png');">
+                <div class="product-images">
+                    <img id="0" src="${productImgFolder}1.1.png" class="active" alt="">
+                    <img id="1" src="${productImgFolder}1.2.png" alt="">
+                    <img id="2" src="${productImgFolder}1.3.png" alt="">
+                    <img id="3" src="${productImgFolder}1.4.png" alt="">
+                </div>
+            </div>
 
-            <p class="product-sub-heading">Цвет</p>
+            <div class="details">
 
-            ${colorButtons}
+                <p class="product-sub-heading">Цвет</p>
 
-            <button class="btn">Заказать</button>
-        </div>
+                ${colorButtons}
+
+                <button class="btn">Заказать</button>
+            </div>
+        </section>
+
+        <section class="detail-des">
+            <h2 class="heading">Характеристики</h2>
+            <div class="des">
+                ${productDes}
+            </div>
+        </section>
     `;
 }
 
