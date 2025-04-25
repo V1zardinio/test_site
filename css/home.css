@@ -1,6 +1,10 @@
 @import 'nav.css';
 @import 'footer.css';
 
+body {
+	background-color: white;
+}
+
 .product{
     position: relative;
     overflow: hidden;
