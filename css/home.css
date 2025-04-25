@@ -5,6 +5,11 @@ body {
 	background-color: white;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .product{
     position: relative;
     overflow: hidden;
