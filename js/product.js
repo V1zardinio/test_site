@@ -6,6 +6,8 @@ if (choosedProduct == 0) {
     var productImgFolder = "img/product/14/";
     var productDes = '<b>Экран: </b>6.1" (2532x1170) OLED 60 Гц<br><b>Память: </b>встроенная 128 ГБ, оперативная 6 ГБ<br><b>Фото: </b>основная камера 12 МП, двойная камера<br><b>Аккумулятор: </b>3279 мА·ч<br><b>Процессор: </b>Apple A15 Bionic';
     var colorButtons = `
+        <p class="product-sub-heading">Цвет</p>
+
         <div class="color-btns">
             <input type="radio" name="color" value="white" checked hidden id="white-color">
             <label for="white-color" class="color-radio-btn check">Сияющая звезда</label>
@@ -19,6 +21,8 @@ if (choosedProduct == 0) {
     var productImgFolder = "img/product/14pro/";
     var productDes = '<b>Экран: </b>6.1" (2556x1179) OLED 120 Гц<br><b>Память: </b>встроенная 256 ГБ, оперативная 6 ГБ<br><b>Фото: </b>основная камера 48 МП, 3 камеры<br><b>Аккумулятор: </b>3200 мА·ч<br><b>Процессор: </b>Apple A16 Bionic';
     var colorButtons = `
+        <p class="product-sub-heading">Цвет</p>
+
         <div class="color-btns">
             <input type="radio" name="color" value="fiol" checked hidden id="fiol-color">
             <label for="fiol-color" class="color-radio-btn check">Фиолетовый</label>
@@ -30,6 +34,46 @@ if (choosedProduct == 0) {
             <label for="gold-color" class="color-radio-btn">Золотистый</label>
             <input type="radio" name="color" value="black" hidden id="black-color">
             <label for="black-color" class="color-radio-btn">Чёрный</label>
+        </div>
+    `;
+} else if (choosedProduct == 2) {
+    var productName = "IPhone 15";
+    var productPrice = "59 990₽";
+    var productImgFolder = "img/product/15/";
+    var productDes = '<b>Экран: </b>6.1" (2556x1179) OLED<br><b>Память: </b>встроенная 128 ГБ, оперативная 6 ГБ<br><b>Фото: </b>основная камера 48 МП, двойная камера<br><b>Процессор: </b>Apple A16 Bionic<br><b>SIM-карты: </b>Dual: nano SIM + eSIM';
+    var colorButtons = `
+        <p class="product-sub-heading">Цвет</p>
+
+        <div class="color-btns">
+            <input type="radio" name="color" value="black" checked hidden id="black-color">
+            <label for="black-color" class="color-radio-btn check">Чёрный</label>
+            <input type="radio" name="color" value="blue" hidden id="blue-color">
+            <label for="blue-color" class="color-radio-btn">Голубой</label>
+        </div>
+        <div class="color-btns">
+            <input type="radio" name="color" value="green" hidden id="green-color">
+            <label for="green-color" class="color-radio-btn">Зелёный</label>
+            <input type="radio" name="color" value="pink" hidden id="pink-color">
+            <label for="pink-color" class="color-radio-btn">Розовый</label>
+        </div>
+    `;
+} else if (choosedProduct == 3) {
+    var productName = "IPhone 15 PRO";
+    var productPrice = "95 100₽";
+    var productImgFolder = "img/product/15pro/";
+    var productDes = '<b>Экран: </b>6.1" (2556x1179) OLED 120 Гц<br><b>Память: </b>встроенная 256 ГБ, оперативная 8 ГБ<br><b>Фото: </b>основная камера 48 МП, 3 камеры<br><b>Процессор: </b>Apple A17 PRO<br><b>SIM-карты </b>Dual nano SIM';
+    var colorButtons = `
+        <p class="product-sub-heading">Цвет (титан)</p>
+        
+        <div class="color-btns">
+            <input type="radio" name="color" value="white" checked hidden id="white-color">
+            <label for="white-color" class="color-radio-btn check">Белый</label>
+            <input type="radio" name="color" value="gray" hidden id="gray-color">
+            <label for="gray-color" class="color-radio-btn">Серый</label>
+        </div>
+        <div class="color-btns">
+            <input type="radio" name="color" value="blue" hidden id="blue-color">
+            <label for="blue-color" class="color-radio-btn">Синий</label>
         </div>
     `;
 }
@@ -54,8 +98,6 @@ const createProduct = () => {
             </div>
 
             <div class="details">
-
-                <p class="product-sub-heading">Цвет</p>
 
                 ${colorButtons}
 
