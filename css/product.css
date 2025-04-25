@@ -1,3 +1,7 @@
+body {
+    background-color: white;
+}
+
 .product-details{
     width: 100%;
     padding: 60px 10vw;
